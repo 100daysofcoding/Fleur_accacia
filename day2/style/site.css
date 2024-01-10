@@ -1,0 +1,256 @@
+        *{
+            margin: 0;
+        }
+        h1{
+            font-size: 2em;
+            color: black;
+            font-family: 'montserrat', sans-serif;
+            text-decoration: underline;
+        }
+        p{
+            font-size: 1.1em;
+            font-family: 'Manrope', sans-serif;
+            color: black;
+        }
+        a{
+            font-size: 1em;
+            font-family: 'Manrope' ,sans-serif;
+            text-decoration: none;  
+            color: black;
+        }
+        h2{
+            text-decoration: none;
+            color: #F9F8FF;
+            font-size: 2em;
+        }
+        header, footer{
+            background-color:white;
+            color: #242424;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        
+        body{
+            background-color: pink;
+        }
+        .cta{
+            background-color: white;
+            color: black;
+            font-family: 'Monserrat';
+            border-radius: 50px;
+            display: inline-block;
+            text-align: center;
+            
+             padding: 10px;
+            padding: auto;
+            width: 200px;
+            margin-top: 20px;
+            margin-left: 45px;
+        } 
+        a:hover{
+            text-decoration: underline;
+        }
+        .cta :hover{
+            background-color: pink;
+            text-decoration: none;
+        }
+        section{
+            padding: 80px;
+        }
+        h2{
+            margin: 30px;
+        }
+        footer,
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            }
+        nav a {
+            margin-left: 30px;
+            }
+        .arranger{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            max-width: 1000px;
+            align-items: center;
+            margin: auto;
+        }
+        
+        .P2{
+            text-align: center;
+            margin-bottom: 80px;
+            color: #242424;
+          }
+        .p2-section{
+            padding: 80px;
+            background-color: white; 
+        }  
+
+        .accueil-photos {
+            background-color: white;
+            padding: 80px;
+          }
+          
+          .accueil-photos h2 {
+            color: #242424;
+            text-align: center;
+            margin-bottom: 80px;
+          }
+          
+          .accueil-photos div {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 15px;
+          }
+          
+          .arranger {
+            display: flex;
+            flex-direction: row;
+            max-width: 1000px;
+            align-items: flex-start;
+            margin: auto;
+          }
+          
+          .arranger h1 {
+            margin-bottom: 15px;
+          }
+          
+          .arranger p {
+            margin-bottom: 30px;
+          }
+          
+          .arranger div {
+            padding-right: 80px;
+          }
+          .section-contact h2 {
+             color: black;
+             text-align: center;
+            
+          }
+          form {
+            display: flex;
+            flex-direction: column;
+            max-width: 1000px;
+            margin: auto;
+            color: black;
+          }
+          
+          .form-nom-email {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+          }
+          
+          .form-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+          }
+          
+          input,
+          textarea {
+            padding: 15px;
+            border-radius: 3px;
+            border: none;
+          }
+          
+          label {
+            margin-bottom: 10px;
+          }
+          
+          input[type='submit'] {
+            width: 200px;
+            margin: auto;
+            margin-top: 30px;
+          }
+          @media screen and (max-width: 996px) {
+            .arranger {
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+          
+            .arranger div {
+              padding-right: 0;
+              text-align: center;
+              order: 2;
+            }
+          
+            .arranger img {
+              order: 1;
+              margin-bottom: 20px;
+              width: 100%;
+            }
+          
+            .accueil-photos {
+              padding: 20px;
+            }
+          
+            .accueil-photos div {
+              flex-direction: column;
+            }
+          
+            .section-contact {
+              padding: 50px 20px;
+            }
+          
+            .form-nom-email {
+              flex-direction: column;
+              gap: 0;
+            }
+          }
+         
+          
+          
+
+
+          .grid-paysages {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px 300px 300px;
+            gap: 15px;
+          }
+
+          .grid-paysages img{
+      width: 100%;
+      height: 100%;
+     object-fit: cover;
+         }
+
+         .lien-conteneur-photo {
+            position: relative;
+          }
+          
+          .photo-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+          }
+          
+          .lien-conteneur-photo:hover .photo-hover {
+            display: flex;
+          }
+          @media screen and (max-width: 996px) {
+            .grid-paysages {
+              grid-template-columns: 1fr;
+              gap: 15px;
+            }
+        }
+        
