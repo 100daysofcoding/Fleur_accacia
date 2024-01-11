@@ -6,10 +6,6 @@ header, footer{
     padding-left: 50px;
     padding-right: 50px;
 }
-
-body{
-    background-color: pink;
-}
 footer,
 nav {
     display: flex;
@@ -25,4 +21,77 @@ nav a {
         font-family: 'Manrope' ,sans-serif;
         text-decoration: none;  
         color: black;
-    }    
+    }   
+section{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink ;
+
+}    
+.deux{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink ;
+
+}
+.box{
+    height: 30px;;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color:white ;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px black;
+} 
+.box:hover input{
+    width: 200px;
+}
+.box input{
+    width: 0;
+    outline: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+
+}
+
+.box a .fa-solid {
+    color:pink;
+    font-size: 18px;
+}
+.filtres{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.marge{
+   margin-top: 50px; 
+   margin-bottom:50px ;
+}
+.titre{
+    margin-right:20px ;
+}
+.texte{
+    border:2px solid gainsboro;
+    height: 20px;
+    width: 150px;
+    border-radius: 30px;
+    margin-right: 20px;
+    color: #242424;
+    background-color: white;
+    
+
+
+}
+.icon{
+    border-radius:25px;
+    width: 32px;
+    height: 32px;
+    color: black;
+    background-color: pink;    
+}
