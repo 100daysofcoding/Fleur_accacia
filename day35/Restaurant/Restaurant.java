@@ -11,18 +11,24 @@ package restaurant;
 public class Restaurant {
     private String nom;
     protected int star;
-    private String repas;
+    private List<String> repas;
+    
+  
     
     public Restaurant(){  
     }  
     public Restaurant(String nom, int star, String repas){
         this.nom= nom;
         this.star= star;
-        this.repas = repas;
+        this.repas = new ArrayList<>();
+        
     }
-    
+
+    public void description() {
+        System.out.println("Le restaurant " + nom + ", est un restaurant " +star +" étoiles");
+    }
     public void servir(){
-        System.out.println("Le resto "+nom+" avec "+star+"étoiles sert plusieurs "+repas);
+       System.out.println("Le restaurant " + nom + " sert plusieurs repas : " + repas);
     }
     
     public String getNom(){
@@ -31,11 +37,9 @@ public class Restaurant {
     public void setNom(String n){
         this.nom = n;
     }
-     public String getRepas(){
-        return repas;        
-    }
-    public void setRepas(String repas){
-        this.repas = repas;
+
+    public void ajouterRepas(String repas) {
+        this.repas.add(repas);
     }
    
     @Override
