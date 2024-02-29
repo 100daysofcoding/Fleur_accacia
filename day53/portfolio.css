@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav{
+    /* background-color: rgb(125, 138, 103); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: calc(0.5em + 1.5vw);
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+a,
+a:visited {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover {
+    color:pink;
+}
+
+@media (max-width:650px){
+        nav ul{
+        position: fixed;
+        left: -100%;
+        top: 5%;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s;
+    }
+    nav li{
+        padding: 3px ;
+    }
+
+    /* nav li:hover{
+        background: rgb(157, 217, 240);
+    } */
+    nav.active ul{
+        left: 0;
+    }
+}
+
+
+
+
+
+
+.entete h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 50px 20px 50px;
+    text-align: center;
+    font-size: 33px;
+    flex-wrap: wrap;
+}
+.sousEntete p{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 15px;
+}
+.sousEntete p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    /* color: #929292; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cadresTextImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.Image1-redimension{
+    width:390px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+    transition: all;
+}
+
+
+.Image1-redimension:hover{
+    transition: 0.5s ease-in-out all;
+}
+
+.cadresText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+.Image2-redimension{
+    width:250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+    transition: all;
+    margin-bottom: 50px;
+}
+
+.cadreText1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #929292;
+    padding: 10px 10px;
+    border: 1px solide black;
+    text-decoration: none;
+    background-color: #E7E7E9;
+    border-radius: 50px;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid transparent;
+}
+
+.cadreText1{
+    margin-top: 60px;
+}
+.cadreText1 a:hover{
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black;
+}
+
+.cadresText .cadreText1  {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.cadreText1 .Image2-redimension {
+    bottom: 3;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.cadre1, .cadre2, .cadre3,.cadre4,.cadre5{
+    display: flex;
+}
+
+.cadresTextImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cadre1 .texte-descriptif,
+.cadre2 .texte-descriptif,
+.cadre3 .texte-descriptif,
+.cadre4 .texte-descriptif,
+.cadre5 .texte-descriptif
+{
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    height: 20px;
+    position: relative;
+    top: 6px;
+    left: 38%;
+    font-size: 11px;
+    gap: 20px;
+}
