@@ -47,7 +47,29 @@ section{
   display: flex;
   justify-content: center;
   align-items: center ;
-  flex-direction: column
-  
+  flex-direction: column;
+  background-color: rgb(72, 72, 119);
+  margin: auto;
+  width: 700px;
+  height: 300px;
+    
+} 
+.contact-infos .contact{
+  max-width: 800px;
+  text-align: center;
    
+}
+.contact-infos .contact h2{
+  font-weight: 500;
+ 
+}
+.item{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative; 
+  padding: 20px 0;
+  
 }
