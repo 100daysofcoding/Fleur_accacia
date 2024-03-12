@@ -73,3 +73,19 @@ section{
   padding: 20px 0;
   
 }
+.fa-brands{
+  font-size: 25px;
+  color: #000000;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 2.5em;
+  margin-left: 60px;
+
+}
+
+.social-icons a {
+  width: 50px;
+  font-size: 25px;
+}
