@@ -1,0 +1,18 @@
+.widget{
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid transparent;
+    width: 400px;
+    margin: auto;
+    box-shadow: 4px 4px 2px black;
+
+}
+.widget-item{
+    display: flex;
+    display:inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 70px;
+    border-right: 2px solid rgb(114, 114, 163);
+    text-align: center;
+
+}
